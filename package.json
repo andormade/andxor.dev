@@ -1,0 +1,29 @@
+{
+  "name": "andxor.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "watch": "parcel src/index.html --port 3002",
+    "prettier": "prettier --write './src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andormade/andxor.dev.git"
+  },
+  "author": "Andor Polgar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andormade/andxor.dev/issues"
+  },
+  "homepage": "https://github.com/andormade/andxor.dev#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "glugglugglug": "^0.0.1"
+  }
+}

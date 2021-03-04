@@ -6,7 +6,7 @@
   "scripts": {
     "build": "parcel build src/index.html",
     "watch": "parcel src/index.html --port 3002",
-    "prettier": "prettier --write './src/**/*.ts'"
+    "prettier": "prettier --write './src/**/*.scss'"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,6 @@
 import { Engine } from 'glugglugglug';
 import computerIconFile from './images/computer.png';
+import userInteractions from './userInteractions';
 
 const loadImage = async function (src: string): Promise<HTMLImageElement> {
 	return new Promise(function (resolve) {
@@ -24,6 +25,7 @@ const init = async function () {
 
 	const engine = new Engine(canvas);
 	engine.gl.clearColor(0, 0.5, 0.5, 1.0);
+
 	engine.loadSpriteSheet(spriteImageElement);
 
 	engine.render(function () {
@@ -37,6 +39,8 @@ const init = async function () {
 			0
 		);
 	});
+
+	userInteractions();
 };
 
 if (document.readyState === 'complete') {
@@ -44,3 +48,7 @@ if (document.readyState === 'complete') {
 } else {
 	window.addEventListener('DOMContentLoaded', init);
 }
+
+window.addEventListener('load', function () {
+	document.documentElement.classList.remove('cursor-busy');
+});

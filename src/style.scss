@@ -1,0 +1,27 @@
+html {
+	cursor: url('./images/cursor.png'), auto;
+}
+
+.cursor {
+	&-loading {
+		cursor: url('./images/cursor-loading.png'), auto;
+	}
+	&-resize {
+		&-antidiagonal {
+			cursor: url('./images/cursor-resize-antidiagonal.png'), auto;
+		}
+		&-diagonal {
+			cursor: url('./images/cursor-resize-diagonal.png'), auto;
+		}
+		&-horizontal {
+			cursor: url('./images/cursor-resize-horizontal.png'), auto;
+		}
+		&-vertical {
+			cursor: url('./images/cursor-resize-vertical.png'), auto;
+		}
+	}
+}
+
+canvas {
+	image-rendering: pixelated;
+}
